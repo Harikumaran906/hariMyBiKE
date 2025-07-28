@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #1d1d1d;
+}
+
+.hide{
+    display: none;
+}
+
+#header-container {
+    width: 100vw;
+    height: 800px;
+    background-image: url("images/Cover_photo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#headline{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+#headline-right{
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+
+#header-quote{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+}
