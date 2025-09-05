@@ -9,6 +9,26 @@
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     </head>
     <body>
+        <div class="menu-panel">
+            <div class="menu-top">
+                <div class="brand">MyBiKE</div>
+                <a href="#" class="close-btn" aria-label="Close menu">×</a>
+            </div>
+
+            <div class="menu-content">
+                <ul class="nav" role="menu">
+                <li><a href="#headline" role="menuitem">Home</a></li>
+                <li><a href="#intro" role="menuitem">About Us</a></li>
+                <li><a href="#compare-bikes" role="menuitem">Compare Bikes</a></li>
+                <li><a href="#details" role="menuitem">Details</a></li>
+                <li><a href="#contact" role="menuitem">Contacts</a></li>
+                </ul>
+
+                <div class="contact">+1 234 5555–55–55</div>
+                <a href="#" class="cta">Book a test ride</a>
+            </div>
+        </div>
+
         <header>
             <div id="header-container">
                 <div id="headline">
@@ -39,41 +59,107 @@
                 </div>
                 <div id="compare-bikes">
                     <h2>Compare Bikes</h2>
-                    <div class="compare-cycles" id="cycle-1">
-                        <img src="images/compare_bikes/cycle_1.png" alt="Image of Sporty 4">
-                        <h3>Sporty 4</h3>
-                        <p class="cycle-description">
-                            The iconic frame brought to a new performance height as 
-                            a sporty, active ride.
-                        </p>
-                        <p class="cycle-price">$ 2 590</p>
-                    </div>
-                    <div class="compare-cycles" id="cycle-2">
-                        <img src="images/compare_bikes/cycle_2.png" alt="Image of Ride in town ST">
-                        <h3>Ride in town ST</h3>
-                        <p class="cycle-description">
-                            An open frame for an upright riding position 
-                            as the most comfortable ride in town.
-                        </p>
-                        <p class="cycle-price">$ 2 590</p>
-                    </div>
-                    <div class="compare-cycles" id="cycle-3">
-                        <img src="images/compare_bikes/cycle_3.png" alt="Image of Agile Ride 3">
-                        <h3>Agile Ride 3</h3>
-                        <p class="cycle-description">
-                            The lightweight frame that has earned its street 
-                            tread as a sleek, agile ride.
-                        </p>
-                        <p class="cycle-price">$ 2 090</p>
+                    <div id="compare-cycles-container">
+                        <div class="compare-cycles" id="cycle-1">
+                            <img src="images/compare_bikes/cycle_1.png" alt="Image of Sporty 4">
+                            <h3>Sporty 4</h3>
+                            <p class="cycle-description">
+                                The iconic frame brought to a new performance height as 
+                                a sporty, active ride.
+                            </p>
+                            <p class="cycle-price">$ 2 590</p>
+                        </div>
+                        <div class="compare-cycles" id="cycle-2">
+                            <img src="images/compare_bikes/cycle_2.png" alt="Image of Ride in town ST">
+                            <h3>Ride in town ST</h3>
+                            <p class="cycle-description">
+                                An open frame for an upright riding position 
+                                as the most comfortable ride in town.
+                            </p>
+                            <p class="cycle-price">$ 2 590</p>
+                        </div>
+                        <div class="compare-cycles" id="cycle-3">
+                            <img src="images/compare_bikes/cycle_3.png" alt="Image of Agile Ride 3">
+                            <h3>Agile Ride 3</h3>
+                            <p class="cycle-description">
+                                The lightweight frame that has earned its street 
+                                tread as a sleek, agile ride.
+                            </p>
+                            <p class="cycle-price">$ 2 090</p>
+                        </div>
                     </div>
                 </div>
                 <div id="details">
                     <h2>The Details</h2>
-                    <div></div>
+                    <div class="dtl_img_container">
+                        <img src="images/detail_images/dtl_img_1.png" alt="Auto Unlock Image 1" class="dtl_img_large">
+                        <img src="images/detail_images/dtl_img_2.png" alt="Auto Unlock Image 2" class="dtl_img_small">
+                    </div>
+                    <div>
+                        <h3>Auto Unlock</h3>
+                        <p>The app senses when you're nearby to unlock automatically. 
+                            GPS tracking so you know where your bike is and can track it anytime.</p>
+                    </div>
+                    <div class="dtl_img_container">
+                        <img src="images/detail_images/dtl_img_3.png" alt="Range & Integrated lights Image 1" class="dtl_img_large">
+                        <img src="images/detail_images/dtl_img_4.png" alt="Range & Integrated lights Image 2" class="dtl_img_small">
+                    </div>
+                    <div>
+                        <h3>Range & Integrated lights</h3>
+                        <p>The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. 
+                            Lights integrated into the frame give you always-on visibility day and night.</p>
+                    </div>
+                    <div class="dtl_img_container">
+                        <img src="images/detail_images/dtl_img_5.png" alt="Hydraulic disc brakes & Lightweight Image 1" class="dtl_img_small">
+                        <img src="images/detail_images/dtl_img_6.png" alt="Hydraulic disc brakes & Lightweight Image 2" class="dtl_img_large">
+                    </div>
+                    <div>
+                        <h3>Hydraulic disc brakes & Lightweight</h3>
+                        <p>Brakes with total stopping power the second you make contact. 
+                            The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. 
+                            Lights integrated into the frame give you always-on visibility day and night.</p>
+                    </div>
+                    <button>Explore</button>
                 </div>
-                <div id="contact"></div>
+                <div id="contact">
+                    <h2>Contact Us</h2>
+                    <div id="contact-container">
+                        <div id="contact-form">
+                            <form action="#">
+                                <input type="text" name="contact-name" id="contact-name" placeholder="Name"><br>
+                                <input type="email" name="contact-email" id="contact-email" placeholder="Email"><br>
+                                <textarea name="contact-message" id="contact-message" rows="5" placeholder="Message"></textarea><br>
+                                <button type="submit" name="contact-send" id="contact-send">Send</button>
+                            </form>
+                        </div>
+                        <div id="contact-details">
+                            <div>
+                                <p class="contact-info-head">Phone</p>
+                                <p class="contact-info">+1 234 5555-55-55</p>
+                            </div>
+                            <div>
+                                <p class="contact-info-head">Email</p>
+                                <p class="contact-info">hello@miami.com</p>
+                            </div>
+                            <div>
+                                <p class="contact-info-head">Address</p>
+                                <p class="contact-info" id="contact-address">400 First ave.<br>
+                                    suite 700<br>
+                                    Minneapolis, MN 55401
+                                </p>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </main>
+        <footer>
+            <div id="footer-container"></div>
+        </footer>
         <script src="scrip.js"></script>
     </body>
 </html>
