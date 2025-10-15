@@ -6,7 +6,6 @@ phoneBtn.addEventListener("click", function() {
     phoneNumHead.classList.toggle("hide")
 });
 
-// Menu panel toggle
 const menuPanel = document.querySelector(".menu-panel");
 const closeBtn = document.querySelector(".close-btn");
 
